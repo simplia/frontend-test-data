@@ -7,6 +7,10 @@ export default class Url {
         })
     }
 
+    public static async productWithoutVariants(): Promise<string> {
+        return Api.single('product-without-variant');
+    }
+
     public static async productWithSingleVariant(): Promise<string> {
         return Api.single('product-single-active-variant');
     }
