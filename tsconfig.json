@@ -19,7 +19,6 @@
   },
   "exclude": ["./node_modules", "./built", "./dist"],
   "files": [
-    "src/index.ts",
-    "src/example.ts"
+    "src/index.ts"
   ]
 }
