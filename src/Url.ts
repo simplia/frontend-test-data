@@ -14,4 +14,16 @@ export default class Url {
     public static async productWithSingleVariant(): Promise<string> {
         return Api.single('product-single-active-variant');
     }
+
+    public static async productWithSingleSelectedVariant(): Promise<string> {
+        return Api.single('product-single-active-selected-variant');
+    }
+
+    public static async productWithVariants(): Promise<string> {
+        return Api.single('product-with-variants');
+    }
+
+    public static async productWithVariantsSelected(): Promise<string> {
+        return Api.single('product-with-variants-selected');
+    }
 }
