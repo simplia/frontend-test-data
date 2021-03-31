@@ -1,9 +1,13 @@
 {
   "name": "@simplia/frontend-test-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simplia/frontend-test-data.git"
+  },
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
