@@ -2,6 +2,11 @@ import Api from './Api'
 import Config from "./Config";
 
 export default class Url {
+
+    public static domain(): string {
+        return `${process.env.BASE_URL}`.replace('https://', '')
+    }
+
     public static async index(config?: Config): Promise<string> {
         if (!config) {
             return new Promise((resolve) => {
