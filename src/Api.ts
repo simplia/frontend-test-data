@@ -2,7 +2,7 @@ import axios from 'axios';
 import Config from "./Config";
 
 export default class Url {
-    public static async single(type: string, config?: Config): Promise<string> {
+    public static async single(type: string, config?: Config): Promise<string|null> {
         if (!config) {
             config = new Config()
         }
@@ -12,6 +12,9 @@ export default class Url {
                 javascript: config.javascript
             }
         })
+        if (response.data.length === 0) {
+            return null;
+        }
         return response.data[0];
     }
 }
