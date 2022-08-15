@@ -35,4 +35,16 @@ export default class Url {
     public static async productWithVariantsSelected(config?: Config): Promise<string|null> {
         return Api.single('product-with-variants-selected', config);
     }
+
+    public static async topCategory(config?: Config): Promise<string|null> {
+        return Api.single('top-category', config);
+    }
+
+    public static async subCategory(config?: Config): Promise<string|null> {
+        return Api.single('sub-category', config);
+    }
+
+    public static async subSubCategory(config?: Config): Promise<string|null> {
+        return Api.single('sub-sub-category', config);
+    }
 }
