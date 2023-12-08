@@ -9,7 +9,7 @@ export default class Url {
         const response = await axios.get(`${process.env.BASE_URL}/_test-urls`, {
             params: {
                 type,
-                javascript: config.javascript
+                preselectGDPR: config.preselectGDPR
             }
         })
         if (response.data.length === 0) {

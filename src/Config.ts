@@ -1,7 +1,7 @@
 export default class Config {
-    javascript: boolean
+    preselectGDPR: boolean
 
-    constructor(javascript = true) {
-        this.javascript = javascript
+    constructor(preselectGDPR = false) {
+        this.preselectGDPR = preselectGDPR
     }
 }
