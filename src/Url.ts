@@ -9,9 +9,7 @@ export default class Url {
 
     public static async index(config?: Config): Promise<string|null> {
         if (!config) {
-            return new Promise((resolve) => {
-                resolve(`${process.env.BASE_URL}/`)
-            })
+            return `${process.env.BASE_URL}/`
         }
         return Api.url('index', config);
     }
