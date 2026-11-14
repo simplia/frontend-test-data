@@ -12,15 +12,11 @@ export default class Input {
     }
 
     public static async searchAnyResult(): Promise<string> {
-        return new Promise((resolve) => {
-            resolve('%debugSearchAnyResult%')
-        });
+        return '%debugSearchAnyResult%'
     }
 
     public static async searchNoResult(): Promise<string> {
-        return new Promise((resolve) => {
-            resolve('%debugSearchNoResult%')
-        });
+        return '%debugSearchNoResult%'
     }
 
 }

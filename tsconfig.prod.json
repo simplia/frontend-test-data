@@ -2,7 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "watch": false,
-    "sourceMap": false
+    "sourceMap": false,
+    "incremental": false
   }
 }
